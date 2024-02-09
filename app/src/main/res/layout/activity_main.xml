@@ -25,7 +25,7 @@
             android:layout_marginStart="29sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The CLOTHES        yOu WeAr"
+            android:text="The CloTHeS        yOu WeAr"
             android:textSize="40sp"
             android:textStyle="bold"/>
 

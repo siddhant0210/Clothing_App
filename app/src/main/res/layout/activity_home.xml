@@ -12,16 +12,26 @@
         android:layout_height="match_parent"
         tools:context=".HomeActivity">
 
-        <TextView
-            android:id="@+id/homeActivity"
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frame_container"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50sp"
-            android:text="Home Activity"
-            android:textAlignment="center"
-            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:menu="@menu/bottom_navigation_bar"
+            android:background="@color/white"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            app:itemIconSize="30dp"
+            app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
+            />
+
+
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Logout_btn"
@@ -33,7 +43,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/homeActivity" />
+            app:layout_constraintTop_toTopOf="parent"
+             />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

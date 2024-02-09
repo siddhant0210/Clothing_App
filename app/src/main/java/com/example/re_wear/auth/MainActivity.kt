@@ -32,12 +32,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        checkForLogin()
+
         btnLogin = findViewById(R.id.btn_login_main)
         btnSignUp = findViewById(R.id.btn_signUp_main)
         btnGoogle = findViewById(R.id.btn_signUp_google)
 
 
-        checkForLogin()
+
 
         mAuth = FirebaseAuth.getInstance()
 
@@ -97,7 +99,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
             else{
-                Toast.makeText(this , it.exception.toString() ,Toast.LENGTH_SHORT ).show()
+                Toast.makeText(this ,"Login Failed" ,Toast.LENGTH_SHORT ).show()
             }
         }
     }
