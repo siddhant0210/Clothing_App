@@ -9,12 +9,13 @@ import com.example.re_wear.databinding.ActivityPassresetBinding
 
 
 class ResetPassActivity : AppCompatActivity() {
-    private lateinit var  resetPassBinding : ActivityPassresetBinding
+    private lateinit var resetPassBinding: ActivityPassresetBinding
+
     override
     fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         resetPassBinding = DataBindingUtil.setContentView(this, R.layout.activity_passreset)
 
-        resetPassBinding.handler = ResetPassActivityHandler(this ,resetPassBinding)
+        resetPassBinding.handler = ResetPassActivityHandler(this, resetPassBinding)
     }
 }

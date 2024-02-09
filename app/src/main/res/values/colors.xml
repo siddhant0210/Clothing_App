@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#F2EC7853</color>
     <color name="mainColor">#FAC51B</color>
+    <color name="g_light_red">#F87F7F</color>
     <color name="colorPrimary">#FFFFFFFF</color> <!-- Your default button color -->
     <color name="colorAccent">#FF4081</color>  <!-- Your Google button color -->
     <color name="colorFacebook">#3C5A99</color>  <!-- Your Facebook button color -->

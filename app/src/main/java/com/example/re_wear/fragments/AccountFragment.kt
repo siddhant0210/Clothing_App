@@ -14,6 +14,6 @@ class AccountFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_account , container , false)
+        return inflater.inflate(R.layout.fragment_account, container, false)
     }
 }

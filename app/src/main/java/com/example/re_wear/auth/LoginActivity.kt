@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var editPass: EditText
     private lateinit var btnLogin: Button
     private lateinit var btnSignUp: TextView
-    private lateinit var btnPassReset : TextView
+    private lateinit var btnPassReset: TextView
     private lateinit var mAuth: FirebaseAuth
 
 
