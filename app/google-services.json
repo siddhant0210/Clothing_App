@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1013562950768",
+    "project_id": "re-wear-4b38d",
+    "storage_bucket": "re-wear-4b38d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013562950768:android:4427ecd6f5f479db24a0b5",
+        "android_client_info": {
+          "package_name": "com.example.re_wear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013562950768-3vmkgc5pvkbrndq67sd23jun0t9qg73p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.re_wear",
+            "certificate_hash": "a8fb8de97213c180e4445021c17823dd0ff44549"
+          }
+        },
+        {
+          "client_id": "1013562950768-l9em58megk8jd3i410vusdd5ammmrht7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs0_JAOiQfuHCYNiUOM9uFzNSe2-Y4pGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013562950768-l9em58megk8jd3i410vusdd5ammmrht7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

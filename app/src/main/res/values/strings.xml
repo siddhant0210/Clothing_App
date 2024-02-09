@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Re-Wear</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="don_t_have_a_account_sign_up">Don\'t have a account? Sign-Up</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="password">Password :</string>
+    <string name="login">Login</string>
+    <string name="email">Email :</string>
+    <string name="login_page">LOGIN</string>
+    <string name="sign_up">Sign-Up</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="sign_up_with_email">Sign-Up with Email</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="forgot_password">Forgot Password ?</string>
+</resources>
