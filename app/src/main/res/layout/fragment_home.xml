@@ -1,101 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
-        android:id="@+id/home_header"
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="25dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/search_bar"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/home_header"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/search_box_background">
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:layout_width="0dp"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/search_bar"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="20dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:singleLine="true"
-                android:text="Search Text"
-                android:textColor="#919394"
-                android:textSize="15sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_weight="1"
+                android:background="@drawable/search_box_background">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:text="Search Text"
+                    android:textColor="#919394"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/ic_search"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginEnd="20dp"
-                android:src="@drawable/ic_search"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/icon_background"
+                android:backgroundTint="#F1EFEF"
+                android:padding="10dp"
+                android:src="@drawable/ic_scan" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
 
-        <View
-            android:layout_width="10dp"
-            android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_background"
+                android:backgroundTint="#F8F4F3F3"
+                android:padding="10dp"
+                android:src="@drawable/ic_microphone" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/icon_background"
-            android:backgroundTint="#F1EFEF"
-            android:padding="10dp"
-            android:src="@drawable/ic_scan" />
+        </LinearLayout>
 
-        <View
-            android:layout_width="5dp"
-            android:layout_height="match_parent" />
-
-        <ImageView
-            android:layout_width="40dp"
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            app:tabTextAppearance="@style/tabLayout_text"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/icon_background"
-            android:backgroundTint="#F8F4F3F3"
-            android:padding="10dp"
-            android:src="@drawable/ic_microphone" />
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_header"
+            app:tabMode="scrollable"
+            app:tabRippleColor="#B9FFFFFF"
+            app:tabSelectedTextColor="@color/mainColor"
+            app:layout_goneMarginTop="5dp" />
 
-    </LinearLayout>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
-    <TableLayout
-        android:id="@+id/tabLayout"
-        app:tabTextAppearance = "@style/tabLayout_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_header"
-        app:tabMode="scrollable"
-        app:tabRippleColor="@color/white"
-        app:tabSelectedTextColor="@color/black"
-        app:layout_goneMarginTop="5dp"/>
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
