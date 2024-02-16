@@ -3,15 +3,8 @@ package com.example.re_wear.viewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.firestore.FirebaseFirestore
-
-import com.bumptech.glide.load.engine.Resource
 import com.example.re_wear.data.Product
-import com.google.common.io.Resources
-import com.google.firebase.Firebase
-import com.google.firebase.FirebaseCommonRegistrar
-import com.google.firebase.FirebaseException
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -30,10 +23,10 @@ class MainCategoryViewModel @Inject constructor(
         _specialProducts
 
     init {
-
+        fetchSpecialProduct()
     }
 
-    fun fetchSpecialProduct() {
+    private fun fetchSpecialProduct() {
         viewModelScope.launch {
             _specialProducts.emit((com.example.re_wear.util.Resource.Loading()))
         }
