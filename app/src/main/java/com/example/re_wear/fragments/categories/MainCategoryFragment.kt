@@ -15,16 +15,13 @@ import com.example.re_wear.R
 import com.example.re_wear.adapters.SpecialProductsAdapter
 import com.example.re_wear.databinding.FragmentMainCategoryBinding
 import com.example.re_wear.util.Resource
-import com.example.re_wear.viewModel.MainCategoryViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.collectLatest
 
-@AndroidEntryPoint
 class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
     private lateinit var binding: FragmentMainCategoryBinding
     private lateinit var specialProductsAdapter : SpecialProductsAdapter
-    private val viewModel by viewModels<MainCategoryViewModel>()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -38,25 +35,7 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
         super.onViewCreated(view, savedInstanceState)
 
         setupSpecialProductsRv()
-        lifecycleScope.launchWhenStarted {
-            viewModel.specialProduct.collectLatest {
-                when (it){
-                    is Resource.Loading ->{
-                        showLoading()
-                    }
-                    is Resource.Success ->{
-                        specialProductsAdapter.differ.submitList(it.data)
-                        hideLoading()
-                    }
-                    is Resource.Error ->{
-                        hideLoading()
-                        Log.e(TAG, it.message.toString())
-                        Toast.makeText(requireContext() , it.message,Toast.LENGTH_SHORT).show()
-                    }
-                    else -> Unit
-                }
-            }
-        }
+
     }
 
     private fun hideLoading() {
@@ -74,5 +53,4 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
             adapter = specialProductsAdapter
         }
     }
-
 }

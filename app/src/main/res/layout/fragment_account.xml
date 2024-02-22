@@ -68,7 +68,7 @@
             android:layout_marginStart="16dp"
             android:drawableLeft="@drawable/baseline_shopping_cart_24"
             android:text="  All orders"
-            android:textSize="22sp" />
+            android:textSize="20sp" />
 
         <View
             android:layout_width="match_parent"
@@ -80,7 +80,7 @@
             android:layout_marginStart="16dp"
             android:drawableLeft="@drawable/ic_search"
             android:text="  Track orders"
-            android:textSize="22sp" />
+            android:textSize="20sp" />
 
         <View
             android:layout_width="match_parent"
@@ -93,7 +93,7 @@
             android:layout_marginStart="16dp"
             android:drawableLeft="@drawable/baseline_drafts_24"
             android:text="  billing and Address"
-            android:textSize="22sp" />
+            android:textSize="20sp" />
 
         <View
             android:layout_width="match_parent"
@@ -155,7 +155,7 @@
             android:layout_marginStart="16dp"
             android:drawableLeft="@drawable/baseline_g_translate_24"
             android:text="  Languages"
-            android:textSize="22sp" />
+            android:textSize="20sp" />
 
         <View
             android:layout_width="match_parent"
@@ -167,7 +167,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="  Settings"
-            android:textSize="22sp"
+            android:textSize="20sp"
             app:drawableLeftCompat="@drawable/baseline_settings_24" />
 
 
@@ -182,7 +182,7 @@
             android:layout_marginStart="16dp"
             android:drawableLeft="@drawable/baseline_logout_24"
             android:text="  Logout"
-            android:textSize="22sp" />
+            android:textSize="20sp" />
 
 
     </LinearLayout>

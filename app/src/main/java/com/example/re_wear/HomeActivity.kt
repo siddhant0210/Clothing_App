@@ -19,7 +19,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
     private lateinit var btnlogout: Button
     private lateinit var mAuth: FirebaseAuth

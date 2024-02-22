@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/search_box_background">
+                android:background="#F6D5D5">
 
                 <TextView
                     android:layout_width="0dp"
