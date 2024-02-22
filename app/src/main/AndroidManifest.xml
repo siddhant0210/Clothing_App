@@ -19,10 +19,6 @@
             </intent-filter>
         </activity>
 
-
-        <activity android:name=".Hilt_HomeActivity"
-            android:exported="false"/>
-
         <activity
             android:name=".auth.MainActivity"
             android:exported="false"/>
