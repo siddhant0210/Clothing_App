@@ -1,8 +1,4 @@
 
-x
-Happ/src/main/java/com/example/re_wear/viewModel/MainCategoryViewModel.kt,d/e/de89b65d8078d5a50dce9ead0e00e6379a4644d9
-e
-5app/src/main/java/com/example/re_wear/data/Product.kt,d/7/d7f7af118d65674ac3fd2d1592a888df550baf93
 
 Oapp/src/main/java/com/example/re_wear/fragments/categories/AccessoryFragment.kt,9/9/998dde08af5b1ba46eef49dda4162cf0f723a26e
 ‚
@@ -66,8 +62,6 @@ G.idea/sonarlint/issuestore/a/8/a8ca6f08004ec230555dc6752ebbe2f542c47413,a/7/a7
 w
 G.idea/sonarlint/issuestore/1/3/13811799165b0d8d7ac4a0c987c5e20a2a5bd8b9,4/b/4b14e2dd92b790c4d9c043041880d673ce5c2aa6
 w
-G.idea/sonarlint/issuestore/d/7/d7f7af118d65674ac3fd2d1592a888df550baf93,4/8/48616f3c65e945e566c37a5727a2cb29faa2a367
-w
 G.idea/sonarlint/issuestore/d/c/dc6023af2edc8f9c75796446e887c49d5ea56316,0/0/007e67dcceef89525c96b6a338465b4bcab6c578
 w
 G.idea/sonarlint/issuestore/9/9/998dde08af5b1ba46eef49dda4162cf0f723a26e,f/9/f904952186d5c7179e51f17179b276bd1f77a13d
@@ -89,8 +83,6 @@ u
 Eapp/src/main/java/com/example/re_wear/handler/LoginActivityHandler.kt,8/f/8f4349293fc79951e9b811c514d1a4caa0738255
 y
 Iapp/src/main/java/com/example/re_wear/handler/ResetPassActivityHandler.kt,0/5/050ded2989d62a55bedceaeeeec9c87e0dab9a41
-h
-8app/src/main/java/com/example/re_wear/MainApplication.kt,6/7/67dac23b5b5d57e921e2044ac41aaae7d579fe01
 <
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 w
@@ -106,13 +98,9 @@ G.idea/sonarlint/issuestore/6/a/6a4bc94b131ec85cda8a3f1d6e100731ba7f2606,f/7/f7
 
 Q.idea/sonarlint/securityhotspotstore/0/5/050ded2989d62a55bedceaeeeec9c87e0dab9a41,a/a/aa9958fbae4e3acc6f741ee27525671fd43d7105
 w
-G.idea/sonarlint/issuestore/d/e/de89b65d8078d5a50dce9ead0e00e6379a4644d9,5/4/5499f8526e4f059dfb67664b2e7a044e0cb36afe
-w
 G.idea/sonarlint/issuestore/a/a/aa1fbe03bd98e97c037a2f53e7a02e3a7d27cfc5,0/b/0b65c31365550d02ca27c200adb203737bfd5941
 w
 G.idea/sonarlint/issuestore/8/f/8f4349293fc79951e9b811c514d1a4caa0738255,c/d/cd6d922cbe561de25508d7605e9ae8d80863b0c7
-w
-G.idea/sonarlint/issuestore/6/7/67dac23b5b5d57e921e2044ac41aaae7d579fe01,f/6/f6deb9a9319839f4ae869a75ae9fbafbc3459831
 w
 G.idea/sonarlint/issuestore/9/0/90959f5327ce6e50a7673c9e7ef39fca73e0f9fb,8/0/80d556e3866b00da3676a1815700cea52e8864c3
 
@@ -207,15 +195,17 @@ w
 G.idea/sonarlint/issuestore/b/5/b5366625072c7d464b76ebd532c40fd32ee0d86d,3/c/3c9671478034ab487990a29c92cd8a86fbc37da6
 
 Q.idea/sonarlint/securityhotspotstore/c/d/cd6d922cbe561de25508d7605e9ae8d80863b0c7,9/a/9a43d86b85ecd1a12dab1cac5212eb767e2861ce
-w
-G.idea/sonarlint/issuestore/f/6/f6deb9a9319839f4ae869a75ae9fbafbc3459831,e/7/e741838873a47555da99b8162b0eb4f588d73978
 
 Q.idea/sonarlint/securityhotspotstore/5/4/5499f8526e4f059dfb67664b2e7a044e0cb36afe,7/d/7d29e49ff91b17c3b8f534ea56d0b6e0acaa7849
-w
-G.idea/sonarlint/issuestore/5/4/5499f8526e4f059dfb67664b2e7a044e0cb36afe,9/3/93d853c5eec1c5aeaca14dd650a9904a5f77ab5b
 
 Q.idea/sonarlint/securityhotspotstore/4/7/4733014b7e87f8b6a1e9942a160027fef05254ca,a/0/a05c982a190c72416711989e8ad340e5e32c37f1
 
 Q.idea/sonarlint/securityhotspotstore/3/2/32813322c99a6c8a141ab2dc12bc10af3425f1b4,2/0/20448b8757755fd94ac2232693630f35b60a481b
 w
 G.idea/sonarlint/issuestore/4/7/4733014b7e87f8b6a1e9942a160027fef05254ca,f/a/fafd0e1206f84af22f1e7cd03b156b9d946d9cf4
+r
+Bapp/src/main/java/com/example/re_wear/data/SpecialProductsItems.kt,6/a/6ae2bedd26b37f423b70acb12d0709039f2b6de4
+i
+9app/src/main/java/com/example/re_wear/api/ApiInterface.kt,c/2/c2a0c9278f94e441cb19d0172028be2f9631c101
+f
+6app/src/main/java/com/example/re_wear/data/Category.kt,4/0/4025b144f68dffd0754b2e23d2838bc8bb287654
