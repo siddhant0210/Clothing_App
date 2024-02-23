@@ -58,7 +58,7 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
             .build()
             .create(ApiInterface::class.java)
 
-        var retroData = retrofit.getData()
+        var retroData = retrofit.getData(0, 10)
 
         // now call back either response or failure
 
