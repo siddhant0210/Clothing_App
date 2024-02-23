@@ -7,6 +7,10 @@ import retrofit2.http.Query
 
 interface ApiInterface {
 
-    @GET("api/v1/products")
+    @GET("/products")
     fun getData(@Query("offset") offset:Int, @Query("limit") limit:Int) : Call<List<SpecialProductsItems>>
+    @GET("/products")
+    fun getDeal(@Query("offset") offset:Int, @Query("limit") limit: Int) : Call<List<SpecialProductsItems>>
+    @GET("/products")
+    fun getProduct(@Query("offset") offset:Int, @Query("limit") limit: Int) : Call<List<SpecialProductsItems>>
 }

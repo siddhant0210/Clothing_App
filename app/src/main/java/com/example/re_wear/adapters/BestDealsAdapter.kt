@@ -12,28 +12,28 @@ import com.example.re_wear.R
 import com.example.re_wear.data.SpecialProductsItems
 import org.json.JSONArray
 
-class SpecialProductsAdapter (private var con : Context, private var list: List<SpecialProductsItems>):
-    RecyclerView.Adapter<SpecialProductsAdapter.SpecialProductsViewHolder>() {
-    // Diff util helps to make recycler view faster by just updating the item that get updated and not all the items
-    inner class SpecialProductsViewHolder(v : View) : RecyclerView.ViewHolder(v) {
-       var img: ImageView = v.findViewById(R.id.image_special_rv_item)
-        var nam: TextView = v.findViewById(R.id.tbSpecialProductName)
-        var price: TextView = v.findViewById(R.id.tvSpecialProductPrice)
+class BestDealsAdapter(private var con: Context, private var list: List<SpecialProductsItems>) :
+    RecyclerView.Adapter<BestDealsAdapter.BestDealsViewHolder>() {
+
+    inner class BestDealsViewHolder(v: View) : RecyclerView.ViewHolder(v) {
+        val img: ImageView = v.findViewById(R.id.img_best_deal)
+        val nam: TextView = v.findViewById(R.id.tv_deal_product_name)
+        val price: TextView = v.findViewById(R.id.tv_old_price)
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SpecialProductsViewHolder {
-        val view = LayoutInflater.from(con).inflate(R.layout.special_rv_item,parent,false)
-        return SpecialProductsViewHolder(view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BestDealsViewHolder {
+        val view = LayoutInflater.from(con).inflate(R.layout.best_deals_rv_item, parent, false)
+        return BestDealsViewHolder(view)
     }
 
     override fun getItemCount(): Int {
         return list.count()
     }
 
-    override fun onBindViewHolder(holder: SpecialProductsViewHolder, position: Int) {
-
+    override fun onBindViewHolder(holder: BestDealsViewHolder, position: Int) {
 //        val firstImageUrl = list[position].image.getOrNull(0)
+////        val imagesArray =  JSONArray(firstImageUrl)
 //
 //
 //        // Handle potential null cases gracefully
@@ -44,8 +44,6 @@ class SpecialProductsAdapter (private var con : Context, private var list: List<
 //            // Set a placeholder image or handle the missing image case as needed
 //            holder.img.setImageResource(R.drawable.baseline_downloading_24) // Replace with your placeholder
 //        }
-
-
         Glide.with(con).load(list[position].image).into(holder.img)
         holder.nam.text = list[position].title
         holder.price.text = list[position].price.toString()

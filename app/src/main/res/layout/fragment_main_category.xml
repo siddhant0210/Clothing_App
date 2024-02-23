@@ -36,8 +36,10 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="10dp"
                 android:scrollbars="horizontal"
+                android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/bestDealText"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
