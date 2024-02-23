@@ -21,8 +21,6 @@ import dagger.hilt.android.AndroidEntryPoint
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var btnlogout: Button
-    private lateinit var mAuth: FirebaseAuth
-    private lateinit var mGoogleSignInClient: GoogleSignInClient
 
     private lateinit var bottomNavigation: BottomNavigationView
 
@@ -32,20 +30,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
 
-        mAuth = FirebaseAuth.getInstance()
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("1013562950768-l9em58megk8jd3i410vusdd5ammmrht7.apps.googleusercontent.com")
-            .requestEmail()
-            .build()
 
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
-        btnlogout = findViewById(R.id.Logout_btn)
-
-        btnlogout.setOnClickListener(View.OnClickListener {
-            mAuth.signOut()
-            //After logging out send user to Login Activity to login again
-            moveToSignInActivity()
-        })
 
         bottomNavigation = findViewById(R.id.bottom_nav)
 
@@ -85,9 +70,5 @@ class HomeActivity : AppCompatActivity() {
     }
 
 
-    private fun moveToSignInActivity() {
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
+
 }
