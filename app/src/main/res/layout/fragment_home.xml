@@ -60,6 +60,8 @@
                 android:layout_height="match_parent" />
 
             <ImageView
+                android:clickable="true"
+                android:id="@+id/scanner"
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/icon_background"
@@ -72,6 +74,8 @@
                 android:layout_height="match_parent" />
 
             <ImageView
+                android:id="@+id/mic"
+                android:clickable="true"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/icon_background"
