@@ -52,8 +52,7 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
         setupBestProductsRv() // for best deals
 
         products = view.findViewById(R.id.bestProducts)
-        products.layoutManager =
-            LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
+        products.layoutManager = LinearLayoutManager(requireContext(), RecyclerView.HORIZONTAL, false)
         setupProductsRv() // for All products
     }
 
@@ -119,7 +118,7 @@ class MainCategoryFragment : Fragment(R.layout.fragment_main_category) {
     // PRODUCTS SEGMENT START HERE ---------------->
     private fun setupProductsRv() {
         val retrofit = getAPIInterface()
-        val retroData = retrofit.getProduct(0,10)
+        val retroData = retrofit.getProduct(0, 10)
 
         retroData.enqueue(object : Callback<List<SpecialProductsItems>> {
             override fun onResponse(
